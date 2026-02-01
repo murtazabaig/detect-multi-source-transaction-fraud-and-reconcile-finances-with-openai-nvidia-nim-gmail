@@ -1,0 +1,48 @@
+{
+  "id": 12732,
+  "title": "Detect multi-source transaction fraud and reconcile finances with OpenAI, Nvidia NIM, Gmail, Slack and Google Sheets",
+  "slug": "detect-multi-source-transaction-fraud-and-reconcile-finances-with-openai-nvidia-nim-gmail-slack-and-google-sheets-12732",
+  "description": "HOW IT WORKSThis workflow automates financial transaction surveillance by monitoringmultiple payment systems, analyzing transaction patterns with AI, and triggeringinstant fraud alerts. Designed for finance teams, compliance officers, andfintech operations, it solves the challenge of real-time fraud detection acrosshigh-volume transaction streams without manual oversight. The systemcontinuously fetches transactions from banking APIs and payment gateways viascheduled triggers or webhooks. Each transaction flows through validation layerschecking for irregular amounts, velocity patterns, and geolocation anomalies. AImodels analyze transaction metadata against historical patterns to calculatefraud risk scores. High-risk transactions trigger immediate alerts to designatedteams via Gmail and Slack, while audit trails are logged to Google Sheets forcompliance documentation. Approved transactions proceed to reconciliation,aggregating financial reports automatically. This eliminates delayed frauddiscovery, reduces false positives through intelligent scoring, and ensuresregulatory compliance through comprehensive audit logging.SETUP STEPS 1. Configure banking API credentials for transaction access 2. Set up webhook endpoints for real-time transaction notifications 3. Add OpenAI API key for fraud pattern analysis and risk scoring 4. Configure NVIDIA NIM API for advanced anomaly detection models 5. Set Gmail OAuth credentials for automated fraud alert delivery 6. Connect Slack workspace and specify alert channels for urgent notifications 7. Link Google Sheets for transaction logging and compliance audit trailsPREREQUISITESActive accounts for payment processors (Stripe, PayPal) or banking APIs (Plaid)USE CASESReal-time credit card transaction monitoring with instant fraud blocksCUSTOMIZATIONAdjust fraud risk scoring thresholds based on business risk toleranceBENEFITSReduces fraud detection time from hours to seconds through real-time monitoring.",
+  "metadescription": "Automate real-time fraud detection across Stripe/PayPal/Plaid & banking APIs with AI risk scoring, instant Slack/Gmail alerts, and Sheets audit logs.",
+  "summary": "Monitor Stripe/PayPal/Plaid (and banking APIs) transactions in real time via scheduled pulls or webhooks  \nValidate every payment for red flags: unusual amounts, rapid-fire velocity, and geolocation anomalies  \nUse OpenAI + NVIDIA NIM to score fraud risk against historical patterns and metadata  \nTrigger instant high-risk alerts through Gmail and Slack for rapid action and blocking  \nLog every event to Google Sheets for airtight compliance audit trails  \nAuto-reconcile approved transactions and roll up reports—cutting detection from hours to seconds while reducing false positives",
+  "date": "15 Jan 2026",
+  "createdAtRaw": "2026-01-15T15:28:50.534+00:00",
+  "categories": [
+    "SecOps",
+    "AI Summarization"
+  ],
+  "nodeTypes": [
+    "n8n-nodes-base.set",
+    "n8n-nodes-base.code",
+    "n8n-nodes-base.gmail",
+    "n8n-nodes-base.merge",
+    "n8n-nodes-base.slack",
+    "n8n-nodes-base.filter",
+    "n8n-nodes-base.switch",
+    "n8n-nodes-base.webhook",
+    "n8n-nodes-base.postgres",
+    "n8n-nodes-base.aggregate",
+    "n8n-nodes-base.stickyNote",
+    "n8n-nodes-base.httpRequest",
+    "@n8n/n8n-nodes-langchain.agent",
+    "n8n-nodes-base.scheduleTrigger",
+    "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+    "@n8n/n8n-nodes-langchain.outputParserStructured"
+  ],
+  "author": {
+    "name": "Cheng Siong Chin",
+    "username": "cschin",
+    "avatar": "https://gravatar.com/avatar/54544f98e839bb9dd9a764ad1e6823eeddb6db5138d201e42f291a7b0a73303f?r=pg&d=retro&size=200",
+    "verified": true
+  },
+  "popularity": 65,
+  "visitors": 65,
+  "inserters": 28,
+  "templateUrl": "https://n8n.io/workflows/12732",
+  "readme": "",
+  "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12732-detect-multi-source-transaction-fraud-and-reconcile-finances-with-openai--nvidia-nim--gmail--slack-and-google-sheets.webp",
+  "complexityLevel": "advanced",
+  "templateData": null,
+  "price": 0,
+  "referalUrl": null
+}
